@@ -2,6 +2,9 @@ set number relativenumber
 set ruler
 set autowrite
 
+"tabstop
+set tabstop=4
+
 "GO
 "call plug#begin()
 "Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
