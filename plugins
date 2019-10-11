@@ -1,3 +1,4 @@
 git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-plugins/start/ale
 git clone https://github.com/tpope/vim-vinegar.git ~/.vim/pack/tpope/start/vim-vinegar
 git clone https://github.com/rust-lang/rust.vim ~/.vim/pack/plugins/start/rust.vim
+rustup component add rustfmt

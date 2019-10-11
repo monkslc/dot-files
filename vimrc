@@ -5,13 +5,16 @@ set autowrite
 "tabstop
 set tabstop=4
 
+" Needed for autoformatting in Rust
+filetype plugin on
+
 "GO
 "call plug#begin()
 "Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 "call plug#end()
 
-let g:go_fmt_command = "goimports"
-let g:go_metalinter_autosave = 1
+"let g:go_fmt_command = "goimports"
+"let g:go_metalinter_autosave = 1
 
 "call plug#begin()
 "Plug 'fatih/vim-go'
