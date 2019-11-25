@@ -3,7 +3,7 @@ PATH="/Users/connormonks/.local/bin:${PATH}"
 export PATH
 
 # Change prompt
-export PS1="\$ "
+export PS1="\W:\$ "
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
