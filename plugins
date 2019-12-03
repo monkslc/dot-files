@@ -2,3 +2,4 @@ git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-pl
 git clone https://github.com/tpope/vim-vinegar.git ~/.vim/pack/tpope/start/vim-vinegar
 git clone https://github.com/rust-lang/rust.vim ~/.vim/pack/plugins/start/rust.vim
 rustup component add rustfmt
+git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go

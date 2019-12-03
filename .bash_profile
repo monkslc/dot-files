@@ -21,7 +21,11 @@ export NODE_PATH="/usr/local/lib/node_modules"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # Go
-export GOPATH="$HOME/go:/Users/connormonks/dev/druid/dk-web-analytics/go"
+export GOPATH="$HOME/go"
 
 # Lua
 export PATH="/Users/connormonks/dev/lua/lua-5.3.5/src:$PATH"
+
+# MacPorts Installer addition on 2019-11-28_at_18:13:12: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
