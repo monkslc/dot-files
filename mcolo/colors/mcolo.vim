@@ -47,7 +47,7 @@ let s:palette.gray22 	 = [253, "#dadada"]
 let s:palette.gray23 	 = [254, "#e4e4e4"]
 let s:palette.white  	 = [255, "#eeeeee"]
 
-let s:palette.cyan 	 = [6  , "#008080"]
+let s:palette.cyan 	 	 = [6  , "#008080"]
 let s:palette.darkblue 	 = [18 , "#000087"]
 let s:palette.darkgreen  = [22 , "#005f00"]
 let s:palette.blue   	 = [33 , "#0087ff"]
@@ -59,7 +59,7 @@ let s:palette.red      	 = [124, "#af0000"]
 let s:palette.purple 	 = [141, "#af87ff"]
 let s:palette.brown 	 = [130, "#af5f00"]
 let s:palette.orange 	 = [203, "#ff5f5f"]
-let s:palette.pink 	 = [200, "#ff00d7"]
+let s:palette.pink 	 	 = [200, "#ff00d7"]
 let s:palette.yellow	 = [220, "#ffd700"]
 
 
@@ -146,7 +146,7 @@ call s:HL('PreProc', s:palette.white, s:palette.black, 'none')
 
 " BINDINGS
 call s:HL('Identifier', s:palette.gray16, s:palette.black, 'none')
-call s:HL('Function', s:palette.gray16, s:palette.black, 'none')
+call s:HL('Function', s:palette.white, s:palette.black, 'none')
 call s:HL('Keyword', s:palette.gray16, s:palette.black, 'none')
 call s:HL('Operator', s:palette.white, s:palette.black, 'none')
 

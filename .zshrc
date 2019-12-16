@@ -3,7 +3,6 @@ PATH="/Users/connormonks/.local/bin:${PATH}"
 export PATH
 
 # Change prompt
-# export PS1="\W:\$ "
 export PS1='%1~> '
 
 # Setting PATH for Python 3.6
