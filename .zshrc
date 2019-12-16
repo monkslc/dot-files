@@ -4,7 +4,7 @@ export PATH
 
 # Change prompt
 # export PS1="\W:\$ "
-export PS1='%1~ %# '
+export PS1='%1~> '
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
