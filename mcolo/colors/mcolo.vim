@@ -1,11 +1,5 @@
-" vim:fdm=marker:foldlevel=0
-"  ____           _
-" |  _ \ _ __ ___| |_ ___
-" | |_) | '__/ _ \ __/ _ \
-" |  __/| | |  __/ || (_) |
-" |_|   |_|  \___|\__\___/
-"
-" A minimal dark theme for VIM
+" Minimal color scheme
+" preto (https://github.com/ewilazarus/preto) used as a starting point
 
 " Reset -------------------------------------------------------------------{{{1
 

@@ -4,6 +4,10 @@ set autowrite
 
 "tabstop
 set tabstop=4
+set shiftwidth=4
+
+" fix backspace
+set backspace=indent,eol,start
 
 " Needed for autoformatting in Rust
 filetype plugin on
@@ -37,6 +41,7 @@ set statusline+=\ %l:%c
 "linting
 let g:ale_fixers = {
 \  'javascript': ['eslint'],
+\  'typescript': ['eslint'],
 \}
 
 let g:ale_fix_on_save = 1
