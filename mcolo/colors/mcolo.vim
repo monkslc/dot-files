@@ -119,10 +119,10 @@ call s:HL('Search', s:palette.yellow, s:palette.black, 'none')
 call s:HL('IncSearch', s:palette.yellow, s:palette.black , 'none')
 
 " SPELLING
-call s:HL('SpellBad', s:palette.white , s:palette.red, 'none')
-call s:HL('SpellCap', s:palette.white, s:palette.red, 'none')
-call s:HL('SpellLocal', s:palette.white, s:palette.red, 'none')
-call s:HL('SpellRare', s:palette.white, s:palette.red, 'none')
+call s:HL('SpellBad', s:palette.red , s:palette.black, 'none')
+call s:HL('SpellCap', s:palette.red, s:palette.black, 'none')
+call s:HL('SpellLocal', s:palette.red, s:palette.black, 'none')
+call s:HL('SpellRare', s:palette.red, s:palette.black, 'none')
 
 " ERROR
 call s:HL('Error', s:palette.red, s:palette.black, 'none')
