@@ -5,7 +5,7 @@ export PATH
 function last_two_dirs {
 	pwd | awk -F\/ '{print $(NF-1) FS $NF}'
 }
-export PS1="\[\033[36m\]\$(last_two_dirs)\[\033[00m\]\$ "
+export PS1="\e[38;5;69m\$(last_two_dirs)\[\033[00m\]\$ "
 
 # Setting PATH for Python 3.6
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"

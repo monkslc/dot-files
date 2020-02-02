@@ -41,7 +41,7 @@ let s:palette.gray22 	 = [253, "#dadada"]
 let s:palette.gray23 	 = [254, "#e4e4e4"]
 let s:palette.white  	 = [255, "#eeeeee"]
 
-let s:palette.cyan 	 	 = [6  , "#008080"]
+let s:palette.cyan 	 	 = [6 , "#008080"]
 let s:palette.darkblue 	 = [18 , "#000087"]
 let s:palette.darkgreen  = [22 , "#005f00"]
 let s:palette.blue   	 = [33 , "#0087ff"]
@@ -55,6 +55,8 @@ let s:palette.brown 	 = [130, "#af5f00"]
 let s:palette.orange 	 = [203, "#ff5f5f"]
 let s:palette.pink 	 	 = [200, "#ff00d7"]
 let s:palette.yellow	 = [220, "#ffd700"]
+let s:palette.coral 	 = [9, "#ffd700"]
+let s:palette.tmuxblue 	 = [69, "#ffd700"]
 
 
 " Utilities -------------------------------------------------------------- {{{1
@@ -101,7 +103,7 @@ call s:HL('Title', s:palette.gray12, s:palette.black , 'none')
 call s:HL('Todo', s:palette.purple, s:palette.black , 'none')
 
 " LINES, COLUMNS
-call s:HL('LineNr', s:palette.cyan, s:palette.black , 'none')
+call s:HL('LineNr', s:palette.tmuxblue, s:palette.black , 'none')
 call s:HL('CursorLine', s:palette.white, s:palette.black, 'none')
 call s:HL('CursorLineNr', s:palette.gray16, s:palette.black , 'none')
 
@@ -179,15 +181,15 @@ call s:HL('PmenuSel', s:palette.black , s:palette.gray19, 'none')
 call s:HL('PmenuThumb', s:palette.gray01, s:palette.gray09, 'none')
 
 " SPLITS
-call s:HL('VertSplit', s:palette.cyan, s:palette.black , 'none')
+call s:HL('VertSplit', s:palette.tmuxblue, s:palette.black , 'none')
 
 " OTHERS
 call s:HL('Debug', s:palette.white, s:palette.black , 'none')
 call s:HL('Delimiter', s:palette.white, s:palette.black , 'none')
 call s:HL('Question', s:palette.white, s:palette.black, 'none')
 call s:HL('Special', s:palette.white, s:palette.black , 'none')
-call s:HL('StatusLine', s:palette.cyan, s:palette.gray05, 'none', 'gui_macvim')
-call s:HL('StatusLineNC', s:palette.cyan, s:palette.gray02, 'none', 'gui_macvim')
+call s:HL('StatusLine', s:palette.tmuxblue, s:palette.gray05, 'none', 'gui_macvim')
+call s:HL('StatusLineNC', s:palette.tmuxblue, s:palette.gray02, 'none', 'gui_macvim')
 call s:HL('Tag', s:palette.white, s:palette.black, 'none')
 call s:HL('WildMenu', s:palette.white, s:palette.black, 'none')
 
