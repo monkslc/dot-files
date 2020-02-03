@@ -93,7 +93,7 @@ call s:HL('Character', s:palette.white, s:palette.black , 'none')
 call s:HL('Constant', s:palette.white, s:palette.black , 'none')
 call s:HL('Float', s:palette.white, s:palette.black , 'none')
 call s:HL('Number', s:palette.white, s:palette.black , 'none')
-call s:HL('String', s:palette.white, s:palette.black , 'bold')
+call s:HL('String', s:palette.white, s:palette.black , 'none')
 call s:HL('SpecialChar', s:palette.white, s:palette.black , 'none')
 
 " COMMENTS
