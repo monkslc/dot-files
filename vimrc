@@ -48,3 +48,10 @@ let g:ale_fix_on_save = 1
 
 " Rust
 let g:rustfmt_autosave = 1
+
+" ctrlp
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" Leaders
+let mapleader=","
+nmap <Leader>p :CtrlP<CR>
