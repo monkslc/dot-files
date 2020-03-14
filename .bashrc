@@ -33,6 +33,9 @@ export PATH="/usr/local/bin:${PATH}"
 # silence zsh warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
+# add git graph alias
+alias gitg='git log --oneline --abbrev-commit --all --graph --decorate --color'
+
 # load local bashrc if there
 if [[ -r ~/.bashrc_local ]]; then
 	source ~/.bashrc_local
