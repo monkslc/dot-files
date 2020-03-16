@@ -1,4 +1,4 @@
-set number relativenumber
+set number
 set ruler
 set autowrite
 
@@ -21,6 +21,8 @@ let g:go_fmt_command = "goimports"
 let g:go_metalinter_autosave = 1
 
 call plug#begin()
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'Quramy/tsuquyomi'
 Plug 'fatih/vim-go'
 Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -29,7 +31,7 @@ call plug#end()
 
 "Color Scheme
 syntax on
-colo mcolo
+colo mcolov2
 
 set hlsearch " move to color scheme
 
@@ -40,8 +42,9 @@ set statusline+=\ %l:%c
 
 "linting
 let g:ale_fixers = {
-\  'javascript': ['eslint'],
-\  'typescript': ['eslint'],
+\  'javascript': ['prettier', 'eslint'],
+\  'typescript': ['prettier', 'eslint'],
+\  'typescriptreact': ['prettier', 'eslint'],
 \}
 
 let g:ale_fix_on_save = 1
@@ -55,3 +58,6 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 " Leaders
 let mapleader=","
 nmap <Leader>p :CtrlP<CR>
+
+" Ctrlp ignore node modules
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'

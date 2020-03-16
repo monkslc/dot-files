@@ -388,7 +388,7 @@ call s:HL('Cursor', s:palette.primary, s:palette.background, 'none', 'gui_macvim
 call s:HL('Underlined', s:palette.primary, s:palette.background, 'underline')
 call s:HL('SpecialKey', s:palette.primary, s:palette.background, 'bold')
 call s:HL('NonText', s:palette.primary, s:palette.background, 'none')
-call s:HL('Directory', s:palette.primary, s:palette.background, 'bold')
+call s:HL('Directory', s:palette.secondary, s:palette.background, 'bold')
 
 " FOLD
 call s:HL('FoldColumn', s:palette.Grey23, s:palette.background, 'none')
