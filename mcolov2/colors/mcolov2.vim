@@ -275,7 +275,7 @@ let s:palette.Grey93	= [255, "#eeeeee"]
 
 let s:palette.background 		= s:palette.Grey11
 let s:palette.primary			= s:palette.LightSteelBlue1
-let s:palette.comment 			= s:palette.Grey30
+let s:palette.comment 			= s:palette.Grey50
 let s:palette.secondary 		= s:palette.LightSlateGrey
 let s:palette.todo 	 			= s:palette.MediumPurple1
 let s:palette.visual 			= s:palette.SpringGreen2
