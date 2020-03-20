@@ -5,7 +5,7 @@ export PATH
 function last_two_dirs {
 	pwd | awk -F\/ '{print $(NF-1) FS $NF}'
 }
-export PS1="\e[38;5;103m\$(last_two_dirs)\[\033[00m\]\$ "
+export PS1="\[\033[34m\$(last_two_dirs)\[\033[00m\]\$ "
 
 # Setting PATH for Python 3.6
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
@@ -35,6 +35,9 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # add git graph alias
 alias gitg='git log --oneline --abbrev-commit --all --graph --decorate --color'
+
+# add alacritty completions
+source ~/.bash_completion/alacritty
 
 # load local bashrc if there
 if [[ -r ~/.bashrc_local ]]; then

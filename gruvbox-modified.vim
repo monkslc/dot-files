@@ -226,13 +226,15 @@ else
 
   let s:fg4_256 = s:gb.dark4_256
 
-  let s:red    = s:gb.faded_red
-  let s:green  = s:gb.faded_green
-  let s:yellow = s:gb.faded_yellow
-  let s:blue   = s:gb.faded_blue
-  let s:purple = s:gb.faded_purple
-  let s:aqua   = s:gb.faded_aqua
-  let s:orange = s:gb.faded_orange
+  let s:red       = s:gb.faded_red
+  let s:green     = s:gb.faded_green
+  let s:yellow    = s:gb.faded_yellow
+  let s:blue      = s:gb.faded_blue
+  let s:purple    = s:gb.faded_purple
+  let s:aqua      = s:gb.faded_aqua
+  let s:orange    = s:gb.faded_orange
+  let s:highlight = s:gb.highlight_cyan
+  let s:string 	  = s:gb.light_slate_grey
 endif
 
 " reset to 16 colors fallback
