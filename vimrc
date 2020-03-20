@@ -31,7 +31,8 @@ call plug#end()
 
 "Color Scheme
 syntax on
-colo mcolov2
+let g:gruvbox_contrast_dark = "hard"
+colo gruvbox-modified
 
 set hlsearch " move to color scheme
 
