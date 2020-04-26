@@ -31,6 +31,7 @@ call plug#end()
 
 "Color Scheme
 syntax on
+set background=dark
 let g:gruvbox_contrast_dark = "hard"
 colo gruvbox-modified
 
