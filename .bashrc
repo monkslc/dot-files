@@ -1,12 +1,6 @@
 PATH="/Users/connormonks/.local/bin:${PATH}"
 export PATH
 
-# Change prompt
-function last_two_dirs {
-	pwd | awk -F\/ '{print $(NF-1) FS $NF}'
-}
-export PS1="\[\033[34m\$(last_two_dirs)\[\033[00m\]\$ "
-
 # Setting PATH for Python 3.6
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
@@ -40,3 +34,6 @@ alias gitg='git log --oneline --abbrev-commit --all --graph --decorate --color'
 if [[ -r ~/.bashrc_local ]]; then
 	source ~/.bashrc_local
 fi
+
+# starship command prompt
+eval "$(starship init bash)"
