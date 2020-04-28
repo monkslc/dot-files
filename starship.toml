@@ -1,1 +1,2 @@
-starship.toml
+[git_branch]
+symbol = "🌱 "
