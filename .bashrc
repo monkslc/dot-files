@@ -35,5 +35,21 @@ if [[ -r ~/.bashrc_local ]]; then
 	source ~/.bashrc_local
 fi
 
-# starship command prompt
-eval "$(starship init bash)"
+function exit_color {
+if [[ $? = "0" ]]; then
+	xcolor="\\[\\033[32m\\]";
+else
+	xcolor="\\[\\033[31m\\]";
+fi
+}
+
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+function get_prompt {
+	exit_color
+	PS1="\[\033[01;36m\]\w\[\033[01;35m\]$(parse_git_branch)\n$(echo $xcolor)> \[\033[01;00m\]"
+}
+
+PROMPT_COMMAND=get_prompt
