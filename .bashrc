@@ -1,13 +1,12 @@
 PATH="/Users/connormonks/.local/bin:${PATH}"
 export PATH
 
+EDITOR="vim"
+export EDITOR
+
 # Setting PATH for Python 3.6
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# Source environment variables for Haskell
-# source "/Users/connormonks/.ghcup/env"
 
 # Export Node Path
 export NODE_PATH="/usr/local/lib/node_modules"
