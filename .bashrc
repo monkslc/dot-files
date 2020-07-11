@@ -36,9 +36,9 @@ fi
 
 function exit_color {
 if [[ $? = "0" ]]; then
-	xcolor="\\[\\033[32m\\]";
+	echo "\\[\\033[32m\\]"
 else
-	xcolor="\\[\\033[31m\\]";
+	echo "\\[\\033[31m\\]"
 fi
 }
 
@@ -47,8 +47,7 @@ parse_git_branch() {
 }
 
 function get_prompt {
-	exit_color
-	PS1="\[\033[01;36m\]\w\[\033[01;35m\]$(parse_git_branch)\n$(echo $xcolor)> \[\033[01;00m\]"
+    PS1="\[\033[01;36m\]\w\[\033[01;35m\]$(parse_git_branch)\n$(exit_color)> \[\033[01;00m\]"
 }
 
 PROMPT_COMMAND=get_prompt
