@@ -43,7 +43,7 @@ fi
 }
 
 parse_git_branch() {
-    git branch 2> /dev/null | awk '/*/ {print " ("$2")"}'
+    git branch 2> /dev/null | awk '/\*/ {print " ("$2")"}'
 }
 
 function get_prompt {
