@@ -28,16 +28,36 @@ set statusline+=\ %l:%c
 
 
 "linting
+let g:ale_linters_explicit = 1
+
+let g:ale_linter_aliases = {
+\  'typescriptreact': 'typescript',
+\  'javascriptreact': 'javascript',
+\}
+
+let g:ale_linters = {
+\   'rust': ['cargo', 'rls'],
+\}
+
+
 let g:ale_fixers = {
 \  'javascript': ['prettier', 'eslint'],
 \  'typescript': ['prettier', 'eslint'],
-\  'typescriptreact': ['prettier', 'eslint'],
+\  'rust': ['rustfmt'],
 \}
 
 let g:ale_fix_on_save = 1
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
+let g:ale_lint_on_enter = 0
+inoremap <silent> <C-N> <C-\><C-O>:ALEComplete<CR>
 
-" Rust
-let g:rustfmt_autosave = 1
+command D ALEGoToDefinition
+command I ALEHover
+command T ALEGoToTypeDefinition
+command E ALEDetail
+command C ALEReset
+command Rename ALERename
 
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
