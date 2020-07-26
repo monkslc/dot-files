@@ -30,19 +30,25 @@ set statusline+=\ %l:%c
 "linting
 let g:ale_linters_explicit = 1
 
-let g:ale_linter_aliases = {
+
+let g:ale_linters = {
+\   'rust': ['cargo', 'rls'],
+\   'javascript': ['eslint'],
+\   'javascriptreact': ['eslint'],
+\   'typescript': ['eslint', 'tsserver'],
+\   'typescriptreact': ['eslint', 'tsserver'],
+\}
+
+let g:ale_fixer_aliases = {
 \  'typescriptreact': 'typescript',
 \  'javascriptreact': 'javascript',
 \}
 
-let g:ale_linters = {
-\   'rust': ['cargo', 'rls'],
-\}
-
-
 let g:ale_fixers = {
-\  'javascript': ['prettier', 'eslint'],
-\  'typescript': ['prettier', 'eslint'],
+\  'javascript': ['prettier'],
+\  'javascriptreact': ['prettier'],
+\  'typescript': ['prettier'],
+\  'typescriptreact': ['prettier'],
 \  'rust': ['rustfmt'],
 \}
 
@@ -57,6 +63,7 @@ command I ALEHover
 command T ALEGoToTypeDefinition
 command E ALEDetail
 command C ALEReset
+command Imp ALEOrganizeImports
 command Rename ALERename
 
 " ctrlp
