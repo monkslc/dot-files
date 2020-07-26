@@ -45,6 +45,7 @@ let g:ale_fixer_aliases = {
 \}
 
 let g:ale_fixers = {
+\  '*': ['remove_trailing_lines', 'trim_whitespace'],
 \  'javascript': ['prettier'],
 \  'javascriptreact': ['prettier'],
 \  'typescript': ['prettier'],
