@@ -4,10 +4,6 @@ export PATH
 EDITOR="vim"
 export EDITOR
 
-# Setting PATH for Python 3.6
-PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-export PATH
-
 # Export Node Path
 export NODE_PATH="/usr/local/lib/node_modules"
 
@@ -51,3 +47,8 @@ function get_prompt {
 }
 
 PROMPT_COMMAND=get_prompt
+
+# nodeup
+export PATH="$HOME/.nodeup/bin/:$PATH"
+
+alias :w="echo \"This isn't vim dummy\""
