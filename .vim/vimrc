@@ -32,7 +32,7 @@ let g:ale_linters_explicit = 1
 
 
 let g:ale_linters = {
-\   'rust': ['cargo', 'rls'],
+\   'rust': ['cargo', 'analyzer'],
 \   'javascript': ['eslint'],
 \   'javascriptreact': ['eslint'],
 \   'typescript': ['eslint', 'tsserver'],
