@@ -32,7 +32,7 @@ let g:ale_linters_explicit = 1
 
 
 let g:ale_linters = {
-\   'rust': ['cargo', 'analyzer'],
+\   'rust': ['cargo', 'rls'],
 \   'javascript': ['eslint'],
 \   'javascriptreact': ['eslint'],
 \   'typescript': ['eslint', 'tsserver'],
@@ -75,4 +75,4 @@ let mapleader=","
 nmap <Leader>p :CtrlP<CR>
 
 " Ctrlp ignore node modules
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|target'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|target/'
