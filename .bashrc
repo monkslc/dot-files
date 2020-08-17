@@ -48,7 +48,4 @@ function get_prompt {
 
 PROMPT_COMMAND=get_prompt
 
-# nodeup
-export PATH="$HOME/.nodeup/bin/:$PATH"
-
 alias :w="echo \"This isn't vim dummy\""
