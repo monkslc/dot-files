@@ -49,3 +49,4 @@ function get_prompt {
 PROMPT_COMMAND=get_prompt
 
 alias :w="echo \"This isn't vim dummy\""
+alias :q="echo \"This isn't vim dummy\""
