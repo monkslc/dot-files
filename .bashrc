@@ -32,7 +32,7 @@ function git() {
     p* ) shift 1; command git push "$@";;
     c* ) shift 1; command git commit "$@";;
     g* ) shift 1; command git log --oneline --abbrev-commit --all --graph --decorate --color;;
-    * ) command git diff "$@";;
+    * ) command git "$@";;
   esac
 }
 
