@@ -22,9 +22,19 @@ export PATH="/usr/local/bin:${PATH}"
 # silence zsh warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-# git aliases
-alias gitg='git log --oneline --abbrev-commit --all --graph --decorate --color'
-alias gitds='git diff --staged'
+# git shorthands
+function git() {
+  case $* in
+    ds* ) shift 1; command git diff --staged "$@";;
+    s* ) shift 1; command git status "$@";;
+    d* ) shift 1; command git diff "$@";;
+    a* ) shift 1; command git add "$@";;
+    p* ) shift 1; command git push "$@";;
+    c* ) shift 1; command git commit "$@";;
+    g* ) shift 1; command git log --oneline --abbrev-commit --all --graph --decorate --color;;
+    * ) command git diff "$@";;
+  esac
+}
 
 # load local bashrc if there
 if [[ -r ~/.bashrc_local ]]; then
