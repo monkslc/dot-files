@@ -32,7 +32,7 @@ function git() {
     a | "a "* ) shift 1; command git add "$@";;
     p | "p "* ) shift 1; command git push "$@";;
     c | "c "* ) shift 1; command git commit "$@";;
-    g | "g "* ) shift 1; command git log --oneline --abbrev-commit --all --graph --decorate --color;;
+    g | "g "* ) shift 1; command git log --oneline --abbrev-commit --all --graph --decorate --color "$@";;
     * ) command git "$@";;
   esac
 }
@@ -60,5 +60,6 @@ function get_prompt {
 
 PROMPT_COMMAND=get_prompt
 
+alias dc=docker-compose
 alias :w="echo \"This isn't vim dummy\""
 alias :q="echo \"This isn't vim dummy\""
