@@ -3,5 +3,5 @@ if [ -z "$1" ]
 then
   echo "No port provided. ex/ whoison 3000"
 else
-  lsof -i :$1
+  lsof -i :$1 | rg 'LISTEN'
 fi
