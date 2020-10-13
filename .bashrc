@@ -19,6 +19,9 @@ export PATH="/Users/connormonks/dev/lua/lua-5.3.5/src:$PATH"
 # Placing local bin first so to avoid apple-git
 export PATH="/usr/local/bin:${PATH}"
 
+# Place scripts in path
+export PATH="$HOME/dev/dot-files/scripts:$PATH"
+
 # silence zsh warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
