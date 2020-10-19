@@ -11,6 +11,10 @@ set expandtab
 " fix backspace
 set backspace=indent,eol,start
 
+" global undo buffer
+set undofile
+set undodir=/tmp
+
 " Needed for autoformatting in Rust
 filetype plugin on
 
@@ -20,7 +24,7 @@ set background=dark
 let g:gruvbox_contrast_dark = "hard"
 colo gruvbox-modified
 
-set hlsearch " move to color scheme
+set hlsearch
 
 set statusline=
 set statusline+=%f
