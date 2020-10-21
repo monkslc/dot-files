@@ -4,4 +4,4 @@ ln -s ~/dev/dot-files/.bashrc ~/.bashrc
 ln -s ~/dev/dot-files/.tmux.conf ~/.tmux.conf
 ! ls ~/.vim && ln -s ~/dev/dot-files/.vim ~/.vim
 chsh -s /bin/bash
-git config --global core.excludesfile ./gitignore_global
+git config --global core.excludesfile ~/dev/dot-files/.gitignore_global
