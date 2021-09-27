@@ -2,14 +2,18 @@ set number
 set ruler
 set autowrite
 
-"tabstop
-set tabstop=4
-set shiftwidth=4
+" use system clipboard
+set clipboard=unnamedplus
+
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 set expandtab
 
 " fix backspace
 set backspace=indent,eol,start
+
+" For better hot module reloading
+set backupcopy=yes
 
 " global undo buffer
 set undofile

@@ -25,21 +25,6 @@ export PATH="$HOME/dev/dot-files/scripts:$PATH"
 # silence zsh warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-# git shorthands
-function git() {
-  case $* in
-    ds | "ds "* ) shift 1; command git diff --staged "$@";;
-    ss | "ss "*) shift 1; command git status -s "$@";;
-    s | "s "* ) shift 1; command git status "$@";;
-    d | "d "* ) shift 1; command git diff "$@";;
-    a | "a "* ) shift 1; command git add "$@";;
-    p | "p "* ) shift 1; command git push "$@";;
-    c | "c "* ) shift 1; command git commit "$@";;
-    g | "g "* ) shift 1; command git log --oneline --abbrev-commit --all --graph --decorate --color "$@";;
-    * ) command git "$@";;
-  esac
-}
-
 # load local bashrc if there
 if [[ -r ~/.bashrc_local ]]; then
 	source ~/.bashrc_local
