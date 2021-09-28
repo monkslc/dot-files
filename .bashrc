@@ -1,11 +1,9 @@
-PATH="$HOME/.local/bin:${PATH}"
-export PATH
-
-EDITOR="vim"
-export EDITOR
+export EDITOR="vim"
 
 # Export Node Path
 export NODE_PATH="/usr/local/lib/node_modules"
+
+export PATH="$HOME/.local/bin:$PATH"
 
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -14,7 +12,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export GOPATH="$HOME/go"
 
 # Placing local bin first so to avoid apple-git
-export PATH="/usr/local/bin:${PATH}"
+export PATH="/usr/local/bin:$PATH"
 
 # Place scripts in path
 export PATH="$HOME/dev/dot-files/scripts:$PATH"
@@ -24,14 +22,14 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # load local bashrc if there
 if [[ -r ~/.bashrc_local ]]; then
-	source ~/.bashrc_local
+    source ~/.bashrc_local
 fi
 
 function exit_color {
 if [[ $? = "0" ]]; then
-	echo "\\[\\033[32m\\]"
+    echo "\\[\\033[32m\\]"
 else
-	echo "\\[\\033[31m\\]"
+    echo "\\[\\033[31m\\]"
 fi
 }
 
