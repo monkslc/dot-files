@@ -13,6 +13,6 @@ git config --replace-all --global alias.d 'diff'
 git config --replace-all --global alias.a 'add'
 git config --replace-all --global alias.p 'pull'
 git config --replace-all --global alias.c 'commit'
-git config --replace-all --global alias.g 'log --oneline --abrev-commit --all --graph --decorate --color'
+git config --replace-all --global alias.g 'log --oneline --abbrev-commit --all --graph --decorate --color'
 
 echo -e "\033[00;32mLinkage completed.\033[0m"
