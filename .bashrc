@@ -1,4 +1,4 @@
-PATH="/Users/connormonks/.local/bin:${PATH}"
+PATH="$HOME/.local/bin:${PATH}"
 export PATH
 
 EDITOR="vim"
@@ -12,9 +12,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # Go
 export GOPATH="$HOME/go"
-
-# Lua
-export PATH="/Users/connormonks/dev/lua/lua-5.3.5/src:$PATH"
 
 # Placing local bin first so to avoid apple-git
 export PATH="/usr/local/bin:${PATH}"
