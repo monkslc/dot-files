@@ -20,11 +20,6 @@ export PATH="$HOME/dev/dot-files/scripts:$PATH"
 # silence zsh warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-# load local bashrc if there
-if [[ -r ~/.bashrc_local ]]; then
-    source ~/.bashrc_local
-fi
-
 function exit_color {
 if [[ $? = "0" ]]; then
     echo "\\[\\033[32m\\]"
@@ -46,3 +41,8 @@ PROMPT_COMMAND=get_prompt
 alias dc=docker-compose
 alias :w="echo \"This isn't vim dummy\""
 alias :q="echo \"This isn't vim dummy\""
+
+# load local bashrc if there
+if [[ -r ~/.bashrc_local ]]; then
+    source ~/.bashrc_local
+fi
