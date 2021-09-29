@@ -29,11 +29,11 @@ fi
 }
 
 parse_git_branch() {
-    git branch 2> /dev/null | awk '/\*/ {print " ("$2")"}'
+    git branch 2> /dev/null | awk '/\*/ {print "("$2")"}'
 }
 
 function get_prompt {
-    PS1="\[\033[01;36m\]\w\[\033[01;35m\]$(parse_git_branch)\n$(exit_color)> \[\033[01;00m\]"
+    PS1="\[\033[01;36m\]\w\[\033[01;35m\] $(parse_git_branch)\n$(exit_color)> \[\033[01;00m\]"
 }
 
 PROMPT_COMMAND=get_prompt
