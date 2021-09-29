@@ -1,0 +1,7 @@
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    xsel -b -o
+elif [[ "$OSTYPE" == "darwin" ]]; then
+    pbpaste
+else
+    echo "Unrecognized operating system"
+fi

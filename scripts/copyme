@@ -1,0 +1,7 @@
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    tee >(xclip -selection c)
+elif [[ "$OSTYPE" == "darwin" ]]; then
+    tee >(xclip pbcopy)
+else
+    echo "Unrecognized operating system"
+fi
