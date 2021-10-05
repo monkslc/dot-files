@@ -31,10 +31,8 @@ set statusline=
 set statusline+=%f
 set statusline+=\ %l:%c
 
-
 "linting
 let g:ale_linters_explicit = 0
-
 
 let g:ale_linters = {
 \   'rust': ['cargo', 'rls', 'clippy'],
