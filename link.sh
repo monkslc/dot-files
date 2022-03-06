@@ -25,7 +25,7 @@ git config --global pager.show   'delta'
 git config --global interactive.diffFilter 'delta --color-only --features=interactive'
 
 git config --global delta.features 'line-numbers decorations'
-git config --global delta.syntax-theme 'Dracula'
+git config --global delta.syntax-theme 'zenburn'
 git config --global delta.plus-style 'syntax #003800'
 git config --global delta.minus-style 'syntax #3f0001'
 
