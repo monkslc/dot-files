@@ -22,8 +22,7 @@ filetype plugin on
 "Color Scheme
 syntax on
 set background=dark
-let g:gruvbox_contrast_dark = "hard"
-colo gruvbox-modified
+colo monotone
 
 set hlsearch
 
